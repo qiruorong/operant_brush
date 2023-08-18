@@ -1,8 +1,8 @@
 #include <AFMotor.h>
 AF_DCMotor motor(1);
 int enA = 9;
-int in1 = 8;
-int in2 = 7;
+int in1 = 5;
+int in2 = 4;
 
 void setup() {
   pinMode(enA, OUTPUT);
@@ -16,13 +16,17 @@ void setup() {
   Serial.begin(9600);
 }
 
-
 void loop() {
   int randomNumber = random(2); 
   if (randomNumber == 0) {
-    motor.run(FORWARD);
+    digitalWrite(in1, HIGH);
+	  digitalWrite(in2, LOW);
   } else {
-    motor.run(BACKWARD);
+    digitalWrite(in1, LOW);
+	  digitalWrite(in2, HIGH);
   }
-  delay(2000);
+  delay(2000);	
+	// Now turn off motors
+	digitalWrite(in1, LOW);
+	digitalWrite(in2, LOW);
 }
