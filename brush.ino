@@ -1,6 +1,6 @@
 int enA = 9;
-int in1 = 5;
-int in2 = 4;
+int in1 = 8;
+int in2 = 7;
 
 void setup() {
   pinMode(enA, OUTPUT);
