@@ -1,6 +1,7 @@
 int enA = 9;
 int in1 = 8;
 int in2 = 7;
+unsigned long stimTimestamps[100];
 
 void setup() {
   pinMode(enA, OUTPUT);
@@ -14,11 +15,13 @@ void setup() {
 }
 
 void loop() {
-  int randomNum = random(2);
-  Serial.println(randomNum);
-
   analogWrite(enA, 255);
-  for (int loopCount = 0; loopCount < 5; loopCount++) {
+  for (int i = 0; i < 100; i++) {
+    int randomNum = random(2); // Generate a new random number for each iteration
+    Serial.println(randomNum);
+    stimTimestamps[i] = millis();
+    Serial.println(stimTimestamps[i]);
+    
     if (randomNum == 0) {
       digitalWrite(in1, HIGH);
       digitalWrite(in2, LOW);
@@ -28,19 +31,9 @@ void loop() {
       digitalWrite(in2, HIGH);
       delay(1000);
     }
+    
     digitalWrite(in1, LOW);
     digitalWrite(in2, LOW);
     delay(1000);
   }
-}
-
-void repeat(void (*action)()){
-  for (int i = 0; i < 5; i++){
-    loop();
-  }
-}
-
-int main(){
-  repeat(loop);
-  return 0;
 }
