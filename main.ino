@@ -5,7 +5,7 @@ int stimulusPinIn = A1;
 int stimulusPinOut = 12;
 unsigned long stimTimestamps[100];
 bool stimulusActive = false;
-unsigned long lastStimTime = 0;
+
 
 void setup() {
   pinMode(enA, OUTPUT);
