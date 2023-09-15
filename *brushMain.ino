@@ -18,7 +18,7 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(stimulusPinIn) && !stimulusActive) {
+  if (digitalRead(stimulusPinIn)) {
     stimulusActive = true;
     analogWrite(enA, 255);
     for (int i = 0; i < 100; i++) {
