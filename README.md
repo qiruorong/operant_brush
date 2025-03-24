@@ -1,4 +1,4 @@
-## Rodent Behavioral Task: The Role of Primary Somatosensory Cortex (S1) in Stimulus Direction Discrimination
+## Rodent Behavioral Task: Necessity of Primary Somatosensory Cortex (S1) in Stimulus Direction Discrimination
 This repository contains scripts and configurations for constructing stimuli and managing the behavioral setup in a rodent experiment investigating the necessity of the primary somatosensory cortex (S1) in discriminating stimulus direction. The experiment consists of four key stages: habituation, classical trials, operant trials, and optogenetic trials. This repository was established in March 2023 as part of Ruorong’s initial research project in the Emanuel Lab.
 
 ### Content
