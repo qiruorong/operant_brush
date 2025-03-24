@@ -3,6 +3,6 @@ This repository contains scripts and configurations for constructing stimuli and
 
 ### Content
 1. brush/ – This folder contains the current validated behavioral paradigm, successfully implemented in this project.
-2. raspberry/ – This folder contains an alternative behavioral setup based on Raspberry Pi configuration. However, this approach was deemed unsuitable due to the lack of a reliable built-in real-time clock.
+2. raspberry/ – This folder contains an attempted setup based on Raspberry Pi configuration. However, this approach was deemed unsuitable due to the lack of a reliable built-in real-time clock.
 3. printhead/ – This folder documents an attempted setup using a custom-made printhead developed by Dr. This approach did not meet the experimental requirements for same reason.
 
